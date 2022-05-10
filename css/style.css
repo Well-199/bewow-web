@@ -1,0 +1,472 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+section{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #FF685D;
+  transition: 0.5s;
+}
+
+header{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /*background-color: brown;*/
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo{
+  /*background-color: chocolate;*/
+  position: absolute;
+  max-width: 80px;
+}
+
+header ul{
+  /*background-color: darkgreen;*/
+  position: relative;
+  display: flex;
+}
+
+header ul li{
+  list-style: none;
+}
+
+header ul li a{
+  display: inline-block;
+  color: #fff;
+  font-weight: 400;
+  margin-left: 40px;
+  text-decoration: none;
+}
+
+.content{
+  /*background-color: darkorchid;*/
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content .textBox{
+  position: relative;
+  max-width: 600px;
+}
+
+.content .textBox h2{
+  color: #fff;
+  font-size: 4em;
+  line-height: 1.5em;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.content .textBox h2 span{
+  font-size: 2em;
+}
+
+.content .textBox p{
+  color: #fff;
+}
+
+.content .textBox a{
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 20px;
+  background: #fff;
+  color: #002c85;
+  border-radius: 40px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.content .imgBox{
+  /*background-color: chartreuse;*/
+  width: 600px;
+  display: flex;
+  padding-right: 50px;
+  margin-top: 50px;
+  justify-content: flex-end;
+}
+
+.content .imgBox img{
+  max-width: 260px;
+}
+
+.thumb{
+  /*background-color: chocolate;*/
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.thumb li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.thumb li:hover{
+  transform: translateY(-15px);
+}
+
+.thumb li img{
+  max-width: 40px;
+}
+
+.sci{
+  /*background-color: darkgreen;*/
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sci li{
+  list-style: none;
+}
+
+.sci li a{
+  display: inline-block;
+  filter: invert(1);
+  margin: 5px 0;
+  transform: scale(0.6);
+}
+
+.produtos{
+    width: 991px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.produtos div{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    max-width: 200px;
+    min-width: 200px;
+    max-height: 200px;
+    min-height: 200px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFFFFF;
+}
+
+.contato{
+    width: 991px;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.float{
+  position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+/* Formulario de Contato */
+
+form {
+  width: 791px;
+  max-width: 791px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: weight;
+  font-style: normal;
+  padding: 10px;
+}
+
+form fieldset {
+  border: none;
+  font-weight: normal;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  box-sizing: border-box;
+  outline: none;
+  display: block;
+  color: #333;
+  width: 100%;
+  padding: 7px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  font-family: inherit;
+  font-size: 18px;
+  height: 45px;
+}
+form textarea {
+  height: 200px;
+}
+form button[type="button"] {
+  display: block;
+  padding: 19px 39px 18px 39px;
+  color: #fff;
+  background: #1abc9c;
+  font-size: 18px;
+  width: 100%;
+  border: 1px solid #16a085;
+  border-width: 1px 1px 3px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s;
+  outline: none;
+}
+form button[type="button"]:hover {
+  background: #109177;
+}
+
+@media (max-width: 991px){
+
+  .navigation{
+    background-color: #FF685D;
+  }
+
+  section{
+    padding: 40px;
+    padding-bottom: 140px;
+  }
+  header{
+    padding: 20px 40px;
+  }
+  header .logo{
+    position: relative;
+    max-width: 60px;
+  }
+  header ul{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.2s;
+    visibility: hidden;
+    opacity: 0;
+  }
+  header ul.active{
+    visibility: visible;
+    opacity: 1;
+  }
+  header ul li a{
+    display: inline-block;
+    color: #FFFFFF;
+    font-weight: 400;
+    margin-left: 0;
+    text-decoration: none;
+    font-size: 2em;
+    margin: 10px 0;
+  }
+  header ul li a:hover{
+    color: #002c85;
+  }
+  .toggleMenu{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: url(../images/menu.png);
+    background-position: center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    z-index: 2;
+    cursor: pointer;
+    filter: invert(1);
+  }
+  .toggleMenu.active{
+    background: url(../images/close.png);
+    background-position: center;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    filter: invert(1);
+  }
+  .content{
+    flex-direction: column;
+    margin-top: 80px;
+  }
+  .content .textBox{
+    position: relative;
+    max-width: 100%;
+    padding-right: 20px;
+  }
+  .content .textBox h2{
+    font-size: 3em;
+  }
+  .content .textBox a{
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+  .content .imgBox{
+    width: 100%;
+    display: flex;
+    padding-right: 0;
+    margin-top: 50px;
+    justify-content: center;
+  }
+  .content .imgBox img{
+    max-width: 150px;
+  }
+  .thumb li img{
+    max-width: 30px;
+  }
+  .sci{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 50px;
+    background: rgba(0,0,0,0.2);
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .produtos{
+      width: 100%;
+  }
+
+  .produtos div{
+    width: 250px;
+    max-width: 250px;
+    min-width: 250px;
+    height: 250px;
+    max-height: 250px;
+    min-height: 250px;
+  }
+
+  .contato{
+      width: 100%;
+  }
+
+}
+
+@media (max-width: 791px){
+
+  form {
+    width: calc(100% - 5px);
+    padding: 2px;
+  }
+  
+  form fieldset {
+    border: none;
+    font-weight: normal;
+  }
+  
+  form input[type="text"],
+  form input[type="email"],
+  form textarea {
+    box-sizing: border-box;
+    outline: none;
+    display: block;
+    color: #333;
+    width: 100%;
+    padding: 7px;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+    font-family: inherit;
+    font-size: 18px;
+    height: 45px;
+  }
+  form textarea {
+    height: 200px;
+  }
+  
+  form button[type="submit"] {
+    display: block;
+    padding: 19px 39px 18px 39px;
+    color: #fff;
+    background: #1abc9c;
+    font-size: 18px;
+    width: 100%;
+    border: 1px solid #16a085;
+    border-width: 1px 1px 3px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    outline: none;
+  }
+  form button[type="submit"]:hover {
+    background: #109177;
+  }
+
+}
+
+@media (max-width: 469px){
+
+  .content .textBox h2{
+    font-size: 2em;
+  }
+  
+  .content .textBox h2 span{
+    font-size: 2em;
+  }
+  
+  .content .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    padding: 8px 15px;
+    background: #fff;
+    color: #002c85;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+
+}
